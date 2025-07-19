@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='schedule-bot.css') }}">
+    <title>Schedule Bot</title>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('index') }}">
+        {{ form.hidden_tag() }}
+        <fieldset class="field-size">
+            <legend class="Title">Form your own Schedule</legend>
+            <div class="age">
+                {{ form.age.label }} {{ form.age(class= "age1") }}
+            </div>
+            <div class="sixth">
+                {{ form.time_frame.label }} {{ form.time_frame(class="sixth1") }}
+            </div>
+            <div class="first">
+                {{ form.first.label }} {{ form.first(class="first1") }}
+            </div>
+            <div class="second">
+                {{ form.second.label }} {{ form.second(class="second1") }}
+            </div>
+            <div class="third">
+                {{ form.third.label }} {{ form.third(class="third1") }}
+            </div>
+            <div class="fourth">
+                {{ form.fourth.label }} {{ form.fourth(class="fourth1") }}
+            </div>
+            <div class="fifth">
+                {{ form.fifth.label }} {{ form.fifth(class="fifth1") }}
+            </div>
+            <div class="form">
+                {{ form.Generate(class="button") }}
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

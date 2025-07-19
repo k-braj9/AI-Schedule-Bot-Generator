@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #de7812fd;
+    color: white;
+}
+
+.Title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.age {
+    text-align: center;
+    margin-top: 55px;
+    font-size: 1.5rem;
+}
+
+input.first1, 
+input.second1,
+input.third1,
+input.fourth1,
+input.fifth1,
+input.sixth1,
+input.age1 {
+    font-size: 1.5rem;
+    padding: 1.5px;
+    width: 200px;
+}
+
+.form {
+    text-align: center;
+    margin-top: 75px;    
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
